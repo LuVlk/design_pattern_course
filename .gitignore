@@ -1,2 +1,5 @@
-# Byte-compiled / optimized / DLL files
+# Language related
 __pycache__/
+
+# Editor related
+.vscode/

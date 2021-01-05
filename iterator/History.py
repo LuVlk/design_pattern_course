@@ -1,5 +1,6 @@
 from typing import List
 
+
 class History:
     """ a History for storing object states in a dictionary
 
@@ -54,11 +55,11 @@ class History:
 
             If the history is empty, a list of None will be returned.
         """
-        
+
         try:
             if obj is None:
                 return self.__states[self.__last_pushed]
-            
+
             obj_type = str(type(obj))
             return self.__states[obj_type]
 
@@ -67,4 +68,3 @@ class History:
 
         except KeyError:
             return [None]
-

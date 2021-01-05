@@ -1,18 +1,18 @@
-from Canvas import Canvas
-from Tools import SelectionTool
+from canvas import Canvas
+from tools import SelectionTool
 
 
 def main() -> None:
 
-    C = Canvas()
+    canvas = Canvas()
 
-    C.mouseDown()
-    C.mouseUp()
+    canvas.mouse_down()
+    canvas.mouse_up()
 
-    C.setCurrentTool(SelectionTool())
+    canvas.set_current_tool(SelectionTool())
 
-    C.mouseDown()
-    C.mouseUp()
+    canvas.mouse_down()
+    canvas.mouse_up()
 
 
 if __name__ == '__main__':

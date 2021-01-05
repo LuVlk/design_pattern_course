@@ -1,17 +1,17 @@
-import Tools as tls
+import tools as tls
 
 
 class Canvas:
-    # think of a Canvas in a drawing application
+    """ A canvas as for example found in a drawing application """
 
     def __init__(self) -> None:
-        self.__currentTool: tls.Tool = tls.BrushTool()
+        self.__current_tool: tls.Tool = tls.BrushTool()
 
-    def mouseDown(self) -> None:
-        self.__currentTool.mouseDown()
+    def mouse_down(self) -> None:
+        self.__current_tool.mouse_down()
 
-    def mouseUp(self) -> None:
-        self.__currentTool.mouseUp()
+    def mouse_up(self) -> None:
+        self.__current_tool.mouse_up()
 
-    def setCurrentTool(self, tool: tls.Tool) -> None:
-        self.__currentTool = tool
+    def set_current_tool(self, tool: tls.Tool) -> None:
+        self.__current_tool = tool

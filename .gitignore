@@ -1,5 +1,7 @@
 # Language related
 __pycache__/
+.mypy_cache/
 
 # Editor related
 .vscode/
+*.code-workspace

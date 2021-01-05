@@ -5,11 +5,11 @@ class Tool(ABC):
     """ Formal interface for implementing different tools to work with a canvas """
 
     @abstractmethod
-    def mouseDown(self):
+    def mouse_down(self):
         pass
 
     @abstractmethod
-    def mouseUp(self):
+    def mouse_up(self):
         pass
 
 
@@ -19,10 +19,10 @@ class SelectionTool(Tool):
     def __init__(self):
         pass
 
-    def mouseDown(self):
+    def mouse_down(self):
         print("Selection icon")
 
-    def mouseUp(self):
+    def mouse_up(self):
         print("Draw a dashed rectangle")
 
 
@@ -32,8 +32,8 @@ class BrushTool(Tool):
     def __init__(self):
         pass
 
-    def mouseDown(self):
+    def mouse_down(self):
         print("Brush icon")
 
-    def mouseUp(self):
+    def mouse_up(self):
         print("Drawing on the canvas")
